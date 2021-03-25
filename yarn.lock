@@ -2,6 +2,3 @@
 # yarn lockfile v1
 
 
-"@askiggy/stardust@askiggy/stardust":
-  version "0.0.8"
-  resolved "git+ssh://git@github.com/askiggy/stardust.git#aeb2b9284cbfd0f2adfae207da8311b4fd338392"
