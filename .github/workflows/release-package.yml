@@ -1,4 +1,4 @@
-name: '@askiggy/staqrdust'
+name: '@askiggy/stardust'
 
 on:
   release:
@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 12
       - run: yarn install --frozen-lockfile
-      - run: yarn test
+      # - run: yarn test
 
   publish-gpr:
     needs: build
