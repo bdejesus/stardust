@@ -1,0 +1,26 @@
+input[type='text'],
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'] {
+  border: 1px solid #999;
+  border-radius: $border-radius-base;
+  height: 32px;
+  margin: 0;
+  padding: 0 $spacing-xs;
+  transition-property: border, color, outline, background-color, box-shadow;
+  transition-duration: $animate-fast;
+  transition-timing-function: linear;
+
+  &:focus {
+    border-color: $brand-primary;
+    box-shadow: 0 0 0 1px $brand-primary;
+    color: $brand-primary;
+    outline: transparent;
+  }
+
+  &[readonly],
+  &[disabled] {
+    background-color: $brand-gray;
+  }
+}

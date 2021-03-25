@@ -1,0 +1,90 @@
+.invisible {
+  display: block;
+  height: 1px;
+  position: absolute;
+  right: 100vw;
+  visibility: hidden;
+  width: 1px;
+}
+
+.pt-md {
+  padding-top: $spacing-base !important;
+}
+
+.pb-md {
+  padding-bottom: $spacing-base !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-sm {
+  margin-top: $spacing-sm !important;
+}
+
+.mt-md {
+  margin-top: $spacing-base !important;
+}
+
+.mt-lg {
+  margin-top: $spacing-lg !important;
+}
+
+.mt-xl {
+  margin-top: $spacing-xl !important;
+}
+
+.mt-xl-2 {
+  margin-top: $spacing-xl-2 !important;
+}
+
+.mt-xl-3 {
+  margin-top: $spacing-xl-3 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-sm {
+  margin-bottom: $spacing-sm !important;
+}
+
+.mb-md {
+  margin-bottom: $spacing-base !important;
+}
+
+.mb-lg {
+  margin-bottom: $spacing-lg !important;
+}
+
+.mb-xl {
+  margin-bottom: $spacing-xl !important;
+}
+
+.mb-xl-2 {
+  margin-bottom: $spacing-xl-2 !important;
+}
+
+.mb-xl-3 {
+  margin-bottom: $spacing-xl-3 !important;
+}
+
+@media (max-width: $screen-sm) {
+  .mt-xl-2 {
+    margin-top: $spacing-xl !important;
+  }
+
+  .mb-xl-2 {
+    margin-bottom: $spacing-xl !important;
+  }
+
+  .mt-xl-3 {
+    margin-top: $spacing-xl-2 !important;
+  }
+
+  .mb-xl-3 {
+    margin-bottom: $spacing-xl-2 !important;
+  }
+}

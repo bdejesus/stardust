@@ -1,0 +1,51 @@
+$tooltip-bg-color: $brand-primary-dark;
+$tooltip-text-color: #fff;
+$tooltip-arrow-size: 6px;
+
+[data-title] {
+  &::before,
+  &::after {
+    bottom: 100%;
+    display: block;
+    left: 50%;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    transition: none;
+    transition-delay: 0.1s;
+  }
+
+  // Tooltip Arrow
+  &::before {
+    border-left: $tooltip-arrow-size solid transparent;
+    border-right: $tooltip-arrow-size solid transparent;
+    border-top: $tooltip-arrow-size + 2px solid $tooltip-bg-color;
+    content: '';
+    height: 0;
+    transform: translate(-50%, 0);
+    width: 0;
+  }
+
+  // Tooltip Text
+  &::after {
+    background-color: $tooltip-bg-color;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.33);
+    color: #fff;
+    content: attr(data-title);
+    font-size: $font-size-sm;
+    font-weight: 300;
+    line-height: 1.2;
+    padding: $spacing-xs $spacing-sm;
+    transform: translate(-50%, -$tooltip-arrow-size);
+  }
+
+  &:hover,
+  &:focus {
+    &::before,
+    &::after {
+      opacity: 1;
+      transition: opacity 0.33s ease;
+    }
+  }
+}

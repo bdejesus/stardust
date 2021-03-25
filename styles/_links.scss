@@ -1,0 +1,15 @@
+a,
+.btnAsLink {
+  border-bottom: 1px solid transparent;
+  color: $link-color;
+  text-decoration: none;
+  transition-duration: $animate-fast;
+  transition-property: color, opacity, border;
+  transition-timing-function: ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+  }
+}

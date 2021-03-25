@@ -1,0 +1,57 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: $screen-xl-2;
+  padding-left: $spacing-xl;
+  padding-right: $spacing-xl;
+
+  @media (max-width: $screen-xl-2-max) {
+    width: $screen-xl;
+  }
+
+  @media (max-width: $screen-xl) {
+    width: $screen-lg;
+    padding-left: $spacing-lg;
+    padding-right: $spacing-lg;
+  }
+
+  @media (max-width: $screen-lg) {
+    width: $screen-md;
+  }
+
+  @media (max-width: $screen-md) {
+    width: $screen-sm;
+  }
+
+  @media (max-width: $screen-sm) {
+    width: unset;
+  }
+
+  @media (max-width: $screen-xs) {
+    padding-left: $spacing-base;
+    padding-right: $spacing-base;
+  }
+}
+
+.container-lg,
+.container-md,
+.container-sm {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-lg {
+  max-width: $screen-lg;
+}
+
+.container-md {
+  max-width: $screen-md;
+}
+
+.container-sm {
+  max-width: $screen-sm;
+}
+
+.container-left {
+  margin-left: unset;
+}

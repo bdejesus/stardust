@@ -1,0 +1,12 @@
+{
+  "name": "@askiggy/stardust",
+  "version": "0.0.8",
+  "description": "Iggy frontend component library",
+  "main": "index.js",
+  "files": [
+    "styles"
+  ],
+  "author": "Iggy<support@askiggy.com>",
+  "license": "MIT",
+  "private": true
+}

@@ -1,0 +1,132 @@
+@import 'fonts';
+
+body {
+  color: $text-color;
+}
+
+body,
+input,
+button,
+p {
+  font-family: 'NeurialGrotesk', 'Helvetica Neue', Helvetica, -apple-system,
+    system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: $font-size-base;
+  font-weight: 400;
+  line-height: $line-height-base;
+  overflow-wrap: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2,
+h3 {
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+h1,
+.text-xl-3 {
+  font-size: $font-size-xl-3;
+  font-weight: 700;
+  line-height: $line-height-xl-3;
+}
+
+h2,
+.text-xl-2 {
+  font-size: $font-size-xl-2;
+  line-height: $line-height-xl-2;
+  margin-bottom: $spacing-base;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h3,
+.text-xl {
+  font-size: $font-size-xl;
+  line-height: $line-height-xl;
+}
+
+h4,
+h5 {
+  font-weight: 700;
+}
+
+h4,
+.text-lg {
+  font-size: $font-size-lg;
+  font-weight: 700;
+  line-height: $line-height-lg;
+}
+
+h5,
+.text-md {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+p,
+ul,
+ol {
+  margin-bottom: $spacing-base;
+  margin-top: $spacing-base;
+}
+
+li {
+  margin-bottom: $spacing-sm;
+  margin-top: $spacing-sm;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+.text-regular {
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media (max-width: $screen-sm) {
+  h1,
+  .text-xl-3 {
+    font-size: $font-size-xl-2;
+    line-height: $line-height-xl-2;
+  }
+  h2,
+  .text-xl-2 {
+    font-size: $font-size-xl;
+    line-height: $line-height-xl;
+  }
+  h3,
+  .text-xl {
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
+  }
+  h4,
+  .text-lg {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+  }
+}

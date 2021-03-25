@@ -1,0 +1,7 @@
+ul.list,
+ol.list {
+  padding-left: $spacing-xl;
+  > li {
+    margin: $spacing-sm 0;
+  }
+}
