@@ -1,6 +1,6 @@
 {
   "name": "@askiggy/stardust",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Iggy frontend component library and styleguide",
   "main": "index.js",
   "files": [
@@ -10,5 +10,20 @@
   "author": "Iggy <support@askiggy.com>",
   "dependencies": {
     "webpack": "^5.35.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-cypress": "^2.11.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.12.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.19.0"
   }
 }

@@ -6,21 +6,22 @@ The Iggy frontend component library and styleguide.
 
 Because this is a private package you'll need to set up a Personal Access Token to be able to install this in your project. [See Authenticating to GitHub Packages for more info](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#authenticating-to-github-packages).
 
+For local development environments, you can set your personal access token to a local `.npmrc` file:
+
 ```
 echo "//npm.pkg.github.com/:_authToken=TOKEN" >> ~/.npmrc
 ```
 
 _Replace `TOKEN` with your own Personal Access Token_
 
-### Project Configuration
-
-On the root of your project, create an `.npmrc` or `.yarnrc` config file and set the registry url for `@askiggy:registry`.
+For production environments, you'll need to create an `.npmrc` or `.yarnrc` config file and set the registry url for `@askiggy:registry`. This is needed for access to the `@askiggy/stardust` private package hosted in github.
 
 With npm using an `.npmrc` file:
 
 ```
-"always-auth"="true"
-"@askiggy:registry"="https://npm.pkg.github.com"
+always-auth=true
+@askiggy:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=${NPM_AUTH_TOKEN}
 ```
 
 With yarn using a `.yarnrc` file:
@@ -28,6 +29,7 @@ With yarn using a `.yarnrc` file:
 ```
 "always-auth" "true"
 "@askiggy:registry" "https://npm.pkg.github.com"
+"//npm.pkg.github.com/:_authToken" "${NPM_AUTH_TOKEN}"
 ```
 
 ## Releasing a new Package
