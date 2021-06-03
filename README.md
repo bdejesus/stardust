@@ -34,9 +34,9 @@ With yarn using a `.yarnrc` file:
 
 ## Releasing a new Package
 
-1. Bumpt he version (we try to follow the [Semantic Versioning](https://semver.org/) system)
+1. Bumpt the version (we try to follow the [Semantic Versioning](https://semver.org/) system)
 2. Create a new tag
    ```
    $ git tag -a {VERSION}
    ```
-3. Publish a new release...
+3. [Draft a new release on GitHub](https://github.com/askiggy/stardust/releases/new)
