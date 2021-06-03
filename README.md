@@ -35,8 +35,10 @@ With yarn using a `.yarnrc` file:
 ## Releasing a new Package
 
 1. Bumpt the version (we try to follow the [Semantic Versioning](https://semver.org/) system)
-2. Create a new tag
+2. Create a new tag, add summary, and push to remote:
    ```
    $ git tag -a {VERSION}
+   $ git push --tags
    ```
-3. [Draft a new release on GitHub](https://github.com/askiggy/stardust/releases/new)
+3. [Draft a new release on GitHub](https://github.com/askiggy/stardust/releases/new) and **Pubish**.
+      ![](./docs/ss-gh-release.png)
