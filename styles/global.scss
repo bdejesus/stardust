@@ -2,6 +2,10 @@
 @import 'normalize';
 @import 'scrollbars';
 
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $background-color;
   color: $text-color;
@@ -15,6 +19,12 @@ main {
     display: block;
     width: 100%;
   }
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
 }
 
 @import 'layout';
