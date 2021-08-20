@@ -8,22 +8,13 @@ body,
 input,
 button,
 p {
-  font-family: 'NeurialGrotesk', 'Helvetica Neue', Helvetica, -apple-system,
-    system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: 'NeurialGrotesk', 'Helvetica Neue', Helvetica, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: $font-size-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   line-height: $line-height-base;
   overflow-wrap: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-h2,
-h3 {
-  &:first-child {
-    margin-top: 0;
-  }
 }
 
 h1,
@@ -37,7 +28,7 @@ h5 {
 h1,
 .text-xl-3 {
   font-size: $font-size-xl-3;
-  font-weight: 700;
+  font-weight: 600;
   line-height: $line-height-xl-3;
 }
 
@@ -48,25 +39,28 @@ h2,
   margin-bottom: $spacing-base;
 }
 
-h3 {
-  font-weight: 400;
-}
-
 h3,
 .text-xl {
   font-size: $font-size-xl;
   line-height: $line-height-xl;
 }
 
+h3 {
+  font-weight: 400;
+
+  &.text-lg {
+    font-weight: 600;
+  }
+}
+
 h4,
 h5 {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h4,
 .text-lg {
   font-size: $font-size-lg;
-  font-weight: 700;
   line-height: $line-height-lg;
 }
 
@@ -74,6 +68,13 @@ h5,
 .text-md {
   font-size: $font-size-base;
   line-height: $line-height-base;
+}
+
+h2,
+h3 {
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 p,
@@ -90,6 +91,47 @@ li {
 
 abbr {
   text-decoration: none;
+}
+
+p {
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+b {
+  font-weight: 600;
+}
+
+pre,
+code {
+  font-family: 'IBMPlexMono', 'Lucida Console', Monaco, monospace;
+  font-size: 13px;
+}
+
+code {
+  background-color: #fff;
+  border-radius: $border-radius-sm;
+  color: $brand-black;
+  display: inline-block;
+  font-weight: 300;
+  line-height: 1.2;
+  padding: 4px;
+}
+
+pre {
+  display: block;
+  max-width: 100%;
+  white-space: pre-wrap;
+}
+
+.text-sm {
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
 }
 
 .text-light {
@@ -114,19 +156,36 @@ abbr {
     font-size: $font-size-xl-2;
     line-height: $line-height-xl-2;
   }
+
   h2,
   .text-xl-2 {
     font-size: $font-size-xl;
     line-height: $line-height-xl;
   }
+
   h3,
   .text-xl {
     font-size: $font-size-lg;
     line-height: $line-height-lg;
   }
+
   h4,
   .text-lg {
     font-size: $font-size-base;
     line-height: $line-height-base;
   }
+}
+
+// System colors
+
+.text-error {
+  color: $system-error;
+}
+
+.text-warning {
+  color: $system-warning;
+}
+
+.text-success {
+  color: $system-success;
 }

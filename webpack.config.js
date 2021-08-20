@@ -1,10 +1,8 @@
-const path = require('path');
-
 module.exports = {
   output: {
-    filename: 'iggy-stardust.js',
+    filename: 'iggy-stardust.js'
   },
   module: {
-    rules: [{ test: /\.txt$/, use: 'raw-loader' }],
-  },
+    rules: [{ test: /\.txt$/, use: 'raw-loader' }]
+  }
 };
