@@ -94,6 +94,13 @@ a.btn-primary,
   }
 }
 
+.btn-alt {
+  background-color: $brand-primary;
+  border-color: $brand-primary;
+  color: #fff;
+}
+
+
 .btn-outline {
   border-color: currentColor;
 }
