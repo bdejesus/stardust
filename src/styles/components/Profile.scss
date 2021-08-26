@@ -1,0 +1,18 @@
+@import '../variables';
+
+.profile {
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.profilePicture {
+  border-radius: 50%;
+  height: 42px;
+  order: 1;
+  width: 42px;
+}
+
+.profileName {
+  margin-right: $spacing-sm;
+}
