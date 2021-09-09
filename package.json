@@ -21,11 +21,11 @@
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "rollup": "rollup -c",
-    "build:publish": "yarn build; cd dist; npm publish; cd ..",
+    "rollup:publish": "yarn rollup; cd dist; npm publish; cd ..",
     "lint": "eslint . --fix; stylelint './**/*.{css,scss,sass}' --fix",
     "lint:js": "eslint .",
     "lint:styles": "stylelint './**/*.{css,scss,sass}'"
@@ -77,5 +77,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "eslintConfig": {
+    "extends": "./.eslintrc"
   }
 }
