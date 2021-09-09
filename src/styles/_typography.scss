@@ -8,12 +8,12 @@ body,
 input,
 button,
 p {
-  font-family: 'NeurialGrotesk', 'Helvetica Neue', Helvetica, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: $font-stack;
   font-size: $font-size-base;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
-  line-height: $line-height-base;
+  line-height: $line-height-relative;
   overflow-wrap: auto;
 }
 
@@ -29,13 +29,13 @@ h1,
 .text-xl-3 {
   font-size: $font-size-xl-3;
   font-weight: 600;
-  line-height: $line-height-xl-3;
+  line-height: $line-height-relative;
 }
 
 h2,
 .text-xl-2 {
   font-size: $font-size-xl-2;
-  line-height: $line-height-xl-2;
+  line-height: $line-height-relative;
   margin-bottom: $spacing-base;
 }
 
@@ -109,7 +109,7 @@ b {
 
 pre,
 code {
-  font-family: 'IBMPlexMono', 'Lucida Console', Monaco, monospace;
+  font-family: $font-stack-mono;
   font-size: 13px;
 }
 
