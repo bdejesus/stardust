@@ -16,5 +16,9 @@
       true, { "ignorePseudoClasses": [ "global" ] }
     ],
     "value-list-comma-newline-after": "never-multi-line"
-  }
+  },
+  "ignoreFiles": [
+    "dist/**/*",
+    "build/**/*"
+  ]
 }

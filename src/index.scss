@@ -17,8 +17,8 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: $spacing-lg;
+  grid-template-columns: 1fr 1fr 1fr;
 
   .component {
     margin: 0;

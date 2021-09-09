@@ -1,6 +1,6 @@
 {
   "name": "@askiggy/stardust",
-  "version": "0.1.0-alpha.13",
+  "version": "0.1.0-alpha.14",
   "description": "Iggy frontend component library and styleguide",
   "homepage": "https://github.com/askiggy/stardust",
   "license": "UNLICENSED",
@@ -26,7 +26,8 @@
     "build": "react-scripts build",
     "rollup": "rollup -c",
     "rollup:publish": "yarn rollup; cd dist; npm publish; cd ..",
-    "lint": "eslint . --fix; stylelint './**/*.{css,scss,sass}' --fix",
+    "lint": "yarn lint:js; yarn lint:styles",
+    "lint:fix": "yarn lint:js --fix; yarn lint:styles --fix",
     "lint:js": "eslint .",
     "lint:styles": "stylelint './**/*.{css,scss,sass}'"
   },
@@ -77,8 +78,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "eslintConfig": {
-    "extends": "./.eslintrc"
   }
 }

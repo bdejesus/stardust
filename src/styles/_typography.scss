@@ -109,6 +109,9 @@ b {
 
 pre,
 code {
+  background-color: #fff;
+  border-radius: $border-radius-sm;
+  color: $brand-black;
   font-family: $font-stack-mono;
   font-size: 13px;
 }
@@ -117,14 +120,18 @@ code {
   border-radius: $border-radius-sm;
   color: $brand-black;
   display: inline-block;
-  line-height: 1.2;
-  padding: 4px;
+  line-height: $line-height-sm;
+  padding: 0 4px;
 }
 
 pre {
   display: block;
   max-width: 100%;
   white-space: pre-wrap;
+}
+
+pre code {
+  white-space: pre;
 }
 
 .text-sm {
