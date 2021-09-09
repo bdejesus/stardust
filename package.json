@@ -21,7 +21,7 @@
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "start": "node server",
+    "start": "react-scripts start",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "rollup": "rollup -c",
@@ -32,14 +32,8 @@
     "lint:styles": "stylelint './**/*.{css,scss,sass}'"
   },
   "dependencies": {
-    "@rollup/plugin-babel": "^5.3.0",
-    "@rollup/plugin-replace": "^3.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "^4.0.3",
-    "rollup-plugin-copy": "^3.4.0",
-    "rollup-plugin-delete": "^2.0.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
     "sass": "^1.38.1"
   },
   "devDependencies": {
@@ -47,6 +41,8 @@
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-react": "^7.14.5",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-replace": "^3.0.0",
     "eslint": "^7.7.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-import-resolver-alias": "^1.1.2",
@@ -56,7 +52,11 @@
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.0.8",
     "prettier": "^2.2.1",
+    "react-scripts": "^4.0.3",
     "rollup": "^2.56.3",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "stylelint": "^13.12.0",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0",
