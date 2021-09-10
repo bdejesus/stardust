@@ -1,8 +1,7 @@
 {
   "name": "@askiggy/stardust",
-  "version": "0.1.0-alpha.14",
+  "version": "0.1.0-alpha.15",
   "description": "Iggy frontend component library and styleguide",
-  "homepage": "https://github.com/askiggy/stardust",
   "license": "UNLICENSED",
   "author": "Iggy <help@askiggy.com>",
   "repository": {
@@ -21,9 +20,9 @@
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "dev": "react-scripts start",
+    "start": "node server",
     "build": "react-scripts build",
+    "dev": "react-scripts start",
     "rollup": "rollup -c",
     "rollup:publish": "yarn rollup; cd dist; npm publish; cd ..",
     "lint": "yarn lint:js; yarn lint:styles",
