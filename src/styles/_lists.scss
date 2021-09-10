@@ -1,8 +1,19 @@
-ul.list,
-ol.list {
+ul.list-default,
+ol.list-default {
   padding-left: $spacing-lg;
 
   > li {
     margin: $spacing-sm 0;
+  }
+}
+
+ul.list-unstyled,
+ol.list-unstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  > li {
+    margin: 0;
   }
 }
