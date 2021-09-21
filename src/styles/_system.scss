@@ -1,12 +1,63 @@
+@import 'variables';
+
 .system-message {
-  background-color: rgba(0, 0, 0, 0.15);
-  border-radius: $border-radius-base;
-  color: #333;
+  background-color: #fff;
+  border-radius: $border-radius-sm;
+  border: 1px solid #f6f6f6;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  color: $brand-primary;
+  font-weight: 500;
+  line-height: $line-height-sm;
   margin: $spacing-base 0;
-  padding: $spacing-base;
+  padding: $spacing-sm $spacing-base;
+
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.info {
+    background-color: $brand-primary;
+    border-color: transparent;
+    color: #fff;
+  }
+
+  &.success {
+    background-color: $system-success;
+    border-color: transparent;
+    color: #fff;
+  }
+
+  &.warning {
+    background-color: $system-warning;
+    border-color: transparent;
+    color: #443700;
+  }
 
   &.error {
-    background-color: rgba(200, 0, 0, 0.15);
-    color: rgba(200, 0, 0, 1);
+    background-color: $system-error;
+    border-color: transparent;
+    color: #fff;
   }
+
+  a {
+    color: currentColor;
+    text-decoration: underline;
+  }
+}
+
+.text-success {
+  color: $system-success;
+}
+
+.text-warning {
+  color: #CA9B00;
+}
+
+.text-error {
+  color: $system-error;
 }

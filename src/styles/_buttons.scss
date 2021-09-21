@@ -92,7 +92,7 @@ a.btn-primary,
 
   &:focus {
     border-color: $brand-secondary-dark;
-    box-shadow: inset 0 0 0 1px $brand-secondary-dark;
+    outline: 2px solid $brand-secondary-dark;
   }
 }
 
@@ -203,6 +203,7 @@ a.btn-primary,
 .btn-alert {
   background-color: $system-error;
   border-color: $system-error;
+  color: #fff;
 
   &:link,
   &:visited {
@@ -236,14 +237,6 @@ a.btn-primary,
   font-size: $font-size-sm;
   height: $button-height-sm;
   padding: 0 $spacing-sm;
-}
-
-@media (max-width: $screen-xl) {
-  button,
-  .button {
-    padding-left: $spacing-lg;
-    padding-right: $spacing-lg;
-  }
 }
 
 @media (max-width: $screen-md) {

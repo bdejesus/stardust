@@ -28,3 +28,11 @@ body {
 .App {
   margin-bottom: $spacing-xl;
 }
+
+.text-element {
+  font-family: $font-stack-mono;
+}
+
+.section {
+  margin: $spacing-xl 0;
+}
