@@ -87,15 +87,48 @@ function App() {
 
       <div className='section buttons'>
         <h2>Buttons</h2>
-        <div className='component' style={{ 'background-color': '#f0f0f0' }}>
-          <button type='button' className='button'>Default</button>&nbsp;
-          <button type='button' className='button btn-alt'>Alternate</button>&nbsp;
-          <button type='button' className='button btn-outline'>Outline</button>&nbsp;
-          <button type='button' className='button btn-primary'>Primary</button>&nbsp;
-          <button type='button' className='button btn-primary btn-outline'>Primary Outline</button>&nbsp;
-          <button type='button' className='button btn-white'>White</button>&nbsp;
-          <button type='button' className='button btn-white btn-outline'>White Outline</button>&nbsp;
-          <button type='button' className='button btn-alert'>Danger</button>
+        <div className='grid'>
+          <div className='component'>
+            <h3 className='text-element'>default</h3>
+            <button type='button' className='button'>Default</button>
+          </div>
+
+          <div className='component'>
+            <h3 className='text-element'>.btn-alt</h3>
+            <button type='button' className='button btn-alt'>Alternate</button>
+          </div>
+
+          <div className='component'>
+            <h3 className='text-element'>.btn-primary</h3>
+            <button type='button' className='button btn-primary'>Primary</button>
+          </div>
+
+          <div className='component'>
+            <h3 className='text-element'>.btn-primary.btn-outline</h3>
+            <button type='button' className='button btn-primary btn-outline'>Primary Outline</button>
+          </div>
+
+          <div className='component'>
+            <h3 className='text-element'>.btn-danger</h3>
+            <button type='button' className='button btn-danger'>Danger</button>
+          </div>
+
+          <br />
+
+          <div className='component tint-light'>
+            <h3 className='text-element'>.btn-outline</h3>
+            <button type='button' className='button btn-outline'>Outline</button>
+          </div>
+
+          <div className='component tint-dark'>
+            <h3 className='text-element'>.btn-white</h3>
+            <button type='button' className='button btn-white'>White</button>
+          </div>
+
+          <div className='component tint-dark'>
+            <h3 className='text-element'>.btn-white.btn-outline</h3>
+            <button type='button' className='button btn-white btn-outline'>White Outline</button>
+          </div>
         </div>
       </div>
 

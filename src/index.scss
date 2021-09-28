@@ -13,6 +13,15 @@ body {
   h2 {
     margin-top: 0;
   }
+
+  &.tint-dark {
+    background-color: $brand-primary-dark;
+    color: #fff;
+  }
+
+  &.tint-light {
+    background-color: $brand-primary-light;
+  }
 }
 
 .grid {
