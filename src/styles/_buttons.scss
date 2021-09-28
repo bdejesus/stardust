@@ -57,7 +57,7 @@ button,
   }
 
   &:focus {
-    outline: 2px solid $brand-primary;
+    outline: 4px solid $brand-primary-light;
   }
 
   &[disabled] {
@@ -91,8 +91,8 @@ a.btn-primary,
   }
 
   &:focus {
-    border-color: $brand-secondary-dark;
-    outline: 2px solid $brand-secondary-dark;
+    border-color: $brand-secondary-light;
+    outline-color: $brand-secondary-light;
   }
 }
 
@@ -160,7 +160,8 @@ a.btn-primary,
 }
 
 .btn-white {
-  border-color: #fff;
+  border-color: rgba(255, 255, 255, 0.8);
+  border-width: 2px;
   color: $button-color;
 
   &:hover {
@@ -176,7 +177,7 @@ a.btn-primary,
   }
 
   &:focus {
-    outline-color: #fff;
+    outline-color: rgba(255, 255, 255, 0.33);
   }
 
   &:active:focus {
@@ -222,7 +223,7 @@ a.btn-primary,
   }
 
   &:focus {
-    outline: 4px solid $system-error-bg;
+    outline-color: $system-error-bg;
   }
 }
 
