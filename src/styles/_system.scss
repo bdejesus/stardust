@@ -2,15 +2,14 @@
 
 .system-message {
   background-color: #fff;
-  border-radius: $border-radius-sm;
   border: 1px solid #f6f6f6;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  border-radius: $border-radius-sm;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   color: $brand-primary;
   font-weight: 500;
   line-height: $line-height-sm;
   margin: $spacing-base 0;
   padding: $spacing-sm $spacing-base;
-
 
   &:first-child {
     margin-top: 0;
@@ -55,7 +54,7 @@
 }
 
 .text-warning {
-  color: #CA9B00;
+  color: #ca9b00;
 }
 
 .text-error {
