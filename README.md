@@ -51,6 +51,47 @@ Component | Description
 `tooltip` | Tooltip component
 
 
-## Releasing a new Package
+## Development
 
-See the [RELEASE.md](RELEASE.md) doc for how to publish releases.
+### The Styleguide
+
+Run the styleguide app on your local environment.
+```bash
+yarn dev
+```
+
+### Releasing a New Version
+
+Bump the version in the `package.json` file using the [Semantic Versioning](https://semver.org/) system and then run the following script:
+
+```bash
+yarn rollup:publish
+```
+
+You can also build the package locally into the `/dist` folder without publishing.
+
+```bash
+$ yarn rollup
+```
+
+### Other Scripts
+
+Run linters and output any errors or warnings.
+```bash
+$ yarn lint
+```
+
+Run linters and autofix any errors or warnings.
+```bash
+$ yarn lint:fix
+```
+
+Run eslint
+```bash
+$ yarn lint:js
+```
+
+Run stylelint
+```bash
+$ yarn lint:styles
+```
