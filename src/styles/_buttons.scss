@@ -54,6 +54,7 @@ button,
 
   &:active {
     background-color: $brand-primary-dark;
+    transform: translateY(2px);
   }
 
   &:focus {
@@ -80,18 +81,18 @@ a.btn-primary,
   }
 
   &:hover {
-    background-color: $brand-callout-dark;
-    border-color: $brand-callout-dark;
-    color: #fff;
+    background-color: #fff;
+    border-color: currentColor;
+    color: $brand-callout;
   }
 
   &:active {
-    background-color: $brand-callout-dark;
-    border-color: $brand-callout-dark;
+    background-color: $brand-callout;
+    border-color: $brand-callout;
+    color: #fff;
   }
 
   &:focus {
-    border-color: $brand-secondary-light;
     outline-color: $brand-secondary-light;
   }
 }
@@ -100,6 +101,16 @@ a.btn-primary,
   background-color: $brand-primary;
   border-color: $brand-primary;
   color: #fff;
+
+  &:hover {
+    background-color: #fff;
+    color: $brand-primary;
+  }
+
+  &:active {
+    background-color: $brand-primary;
+    color: #fff;
+  }
 }
 
 .btn-outline {
@@ -171,17 +182,13 @@ a.btn-primary,
   }
 
   &:active {
-    background-color: $brand-primary;
-    border-color: $brand-primary;
-    color: #fff;
+    background-color: #fff;
+    border-color: #fff;
+    color: $brand-primary;
   }
 
   &:focus {
     outline-color: rgba(255, 255, 255, 0.33);
-  }
-
-  &:active:focus {
-    outline-color: $brand-primary;
   }
 
   &.btn-outline {
@@ -213,13 +220,15 @@ a.btn-primary,
   }
 
   &:hover {
-    background-color: darken($system-error, 10%);
-    border-color: darken($system-error, 10%);
+    background-color: #fff;
+    border-color: currentColor;
+    color: $system-error;
   }
 
   &:active {
-    background-color: darken($system-error, 15%);
-    border-color: darken($system-error, 15%);
+    background-color: $system-error;
+    border-color: $system-error;
+    color: #fff;
   }
 
   &:focus {
