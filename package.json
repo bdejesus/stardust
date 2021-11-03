@@ -1,12 +1,12 @@
 {
   "name": "@askiggy/stardust",
-  "version": "0.2.0-pre.1",
+  "version": "0.2.0-pre.2",
   "description": "Iggy frontend component library and styleguide",
   "license": "UNLICENSED",
   "author": "Iggy <help@askiggy.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/askiggy/stardust.git"
+    "url": "git+https://github.com/askiggy/stardust.git"
   },
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -24,7 +24,7 @@
     "build": "react-scripts build",
     "dev": "react-scripts start",
     "rollup": "rollup -c",
-    "rollup:publish": "yarn rollup; cd dist; npm publish; cd ..",
+    "rollup:publish": "yarn rollup; cd dist; npm publish --access=public; cd ..",
     "lint": "yarn lint:js; yarn lint:styles",
     "lint:fix": "yarn lint:js --fix; yarn lint:styles --fix",
     "lint:js": "eslint .",
@@ -76,5 +76,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/askiggy/stardust/issues"
+  },
+  "homepage": "https://github.com/askiggy/stardust#readme",
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [
+    "iggy",
+    "styleguide",
+    "framework",
+    "component",
+    "library"
+  ]
 }
