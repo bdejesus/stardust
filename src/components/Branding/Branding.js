@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import logo from './iggy-logo.svg';
 
 function Branding({ className, href, src }) {
   return (
@@ -7,13 +8,13 @@ function Branding({ className, href, src }) {
       { href ? (
         <a href={href}>
           <img
-            src={src || 'https://askiggy.com/logo/iggy-logo.svg'}
+            src={src || logo}
             alt='Iggy'
           />
         </a>
       ) : (
         <img
-          src={src || 'https://askiggy.com/logo/iggy-logo.svg'}
+          src={src || logo}
           alt='Iggy'
         />
       )}

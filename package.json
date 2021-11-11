@@ -76,19 +76,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "bugs": {
-    "url": "https://github.com/askiggy/stardust/issues"
-  },
-  "homepage": "https://github.com/askiggy/stardust#readme",
-  "directories": {
-    "doc": "docs"
-  },
-  "keywords": [
-    "iggy",
-    "styleguide",
-    "framework",
-    "component",
-    "library"
-  ]
+  }
 }
