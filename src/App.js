@@ -13,14 +13,14 @@ function App() {
     <div className='App container'>
       <h1>Stardust</h1>
 
-      <div className='section'>
+      <div className='module'>
         <h2>Branding</h2>
         <div className='component'>
           <Branding />
         </div>
       </div>
 
-      <div className='section'>
+      <div className='module'>
         <h2>Profile</h2>
         <div className='component'>
           <Profile
@@ -32,7 +32,7 @@ function App() {
         </div>
       </div>
 
-      <div className='section typography'>
+      <div className='module typography'>
         <h2>Typography</h2>
 
         <div className='grid'>
@@ -85,7 +85,7 @@ function App() {
         </div>
       </div>
 
-      <div className='section buttons'>
+      <div className='module buttons'>
         <h2>Buttons</h2>
         <div className='grid'>
           <div className='component'>
@@ -132,7 +132,7 @@ function App() {
         </div>
       </div>
 
-      <div className='section system'>
+      <div className='module system'>
         <h2>System Message</h2>
         <div className='component'>
           <h3 className='text-element'>.system-message</h3>

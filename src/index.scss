@@ -2,6 +2,7 @@
 
 body {
   background-color: #fcfcfc;
+  background-image: linear-gradient(#fff 0, #fcfcfc 60px);
 }
 
 .component {
@@ -13,6 +14,10 @@ body {
 
   h2 {
     margin-top: 0;
+  }
+
+  h3 {
+    font-size: $font-size-xl;
   }
 
   &.tint-dark {
@@ -49,6 +54,6 @@ body {
   font-family: $font-stack-mono;
 }
 
-.section {
+.module {
   margin: $spacing-xl 0;
 }

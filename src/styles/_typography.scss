@@ -22,20 +22,19 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 500;
+  font-weight: 300;
 }
 
 h1,
 .text-xl-3 {
-  font-size: $font-size-xl-3;
-  font-weight: 600;
-  line-height: $line-height-relative;
+  font-size: $font-size-xl-4;
+  line-height: $line-height-xl-4;
 }
 
 h2,
 .text-xl-2 {
-  font-size: $font-size-xl-2;
-  line-height: $line-height-relative;
+  font-size: $font-size-xl-3;
+  line-height: $line-height-xl-3;
   margin-bottom: $spacing-base;
 }
 
@@ -45,42 +44,37 @@ h2 {
 
 h3,
 .text-xl {
-  font-size: $font-size-xl;
-  line-height: $line-height-xl;
+  font-size: $font-size-xl-2;
+  line-height: $line-height-xl-2;
 }
 
 h3 {
-  font-weight: 400;
   margin-bottom: $spacing-base;
   margin-top: $spacing-lg;
-
-  &.text-lg {
-    font-weight: 600;
-  }
 }
 
 h4,
 h5,
 h6 {
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: $spacing-sm;
   margin-top: $spacing-lg;
 }
 
 h4,
 .text-lg {
-  font-size: $font-size-lg;
+  font-size: $font-size-xl;
   line-height: $line-height-lg;
 }
 
 h5,
 .text-md {
-  font-size: $font-size-base;
+  font-size: $font-size-lg;
   line-height: $line-height-base;
 }
 
 h6 {
-  font-size: $font-size-sm;
+  font-size: $font-size-base;
   line-height: $line-height-sm;
 }
 
@@ -172,24 +166,30 @@ pre code {
 @media (max-width: $screen-sm) {
   h1,
   .text-xl-3 {
-    font-size: $font-size-xl-2;
-    line-height: $line-height-xl-2;
+    font-size: $font-size-xl-3;
+    line-height: $line-height-xl-3;
   }
 
   h2,
   .text-xl-2 {
-    font-size: $font-size-xl;
-    line-height: $line-height-xl;
+    font-size: $font-size-xl-2;
+    line-height: $line-height-xl-2;
   }
 
   h3,
   .text-xl {
-    font-size: $font-size-lg;
-    line-height: $line-height-lg;
+    font-size: $font-size-xl;
+    line-height: $line-height-xl;
   }
 
   h4,
   .text-lg {
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
+  }
+
+  h5,
+  h6 {
     font-size: $font-size-base;
     line-height: $line-height-base;
   }
