@@ -40,15 +40,19 @@ h1,
   line-height: $line-height-xl-4;
 }
 
+h1 {
+  margin-bottom: $spacing-lg;
+}
+
 h2,
 .text-xl-2 {
   font-size: $font-size-xl-3;
   line-height: $line-height-xl-3;
-  margin-bottom: $spacing-base;
 }
 
 h2 {
-  margin-top: $spacing-lg;
+  margin-bottom: $spacing-lg;
+  margin-top: $spacing-xl;
 }
 
 h3,
@@ -135,7 +139,7 @@ code {
   color: $brand-black;
   font-family: $font-stack-mono;
   font-size: $font-size-sm;
-  line-height: $line-height-base;
+  line-height: $line-height-sm;
 }
 
 code {
