@@ -26,7 +26,7 @@ function App() {
           <Profile
             user={{
               name: 'Ben de Jesus',
-              picture: 'http://placekitten.com/200/200'
+              picture: 'https://placekitten.com/200/200'
             }}
           />
         </div>
@@ -84,6 +84,59 @@ function App() {
         </div>
       </div>
 
+      <div className='module form'>
+        <h2>Form Elements</h2>
+
+        <div className='grid'>
+          <div className='component'>
+            <h3>text</h3>
+
+            <div className='form-control input-text'>
+              <label htmlFor='Name'>Name</label>
+              <input type='text' name='Name' value="Lorem ipsum dolor sit amet..." />
+            </div>
+          </div>
+
+          <div className='component'>
+            <h3>checkbox</h3>
+            <div className='form-control input-checkbox'>
+              <label>
+                <input type='checkbox' /> Check
+              </label>
+            </div>
+          </div>
+
+          <div className='component'>
+            <h3>radio</h3>
+            <div className='form-control input-radio'>
+              <label>
+                <input type='radio' /> Radio
+              </label>
+            </div>
+          </div>
+
+          <div className='component'>
+            <h3>select</h3>
+            <div className='form-control input-select'>
+              <label htmlFor='Select'>Options</label>
+              <select name='Select'>
+                <option selected disabled>Select One</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+              </select>
+            </div>
+          </div>
+
+          <div className='component'>
+            <h3>textarea</h3>
+            <div className='form-control input-textarea'>
+              <label htmlFor='textarea'>Body</label>
+              <textarea name='textarea' value="Lorem ipsum dolor sit amet..." />
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className='module buttons'>
         <h2>Buttons</h2>
         <div className='grid'>
@@ -128,6 +181,15 @@ function App() {
             <h3 className='text-element'>.btn-white.btn-outline</h3>
             <button type='button' className='button btn-white btn-outline'>White Outline</button>
           </div>
+        </div>
+      </div>
+
+      <div className='module system'>
+        <h2>Panels</h2>
+
+        <div className='component'>
+          <h3 className='text-element'>.panel</h3>
+          <div className='panel'>Panel Content</div>
         </div>
       </div>
 

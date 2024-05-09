@@ -1,8 +1,16 @@
+label,
+.form-label {
+  display: block;
+  font-size: $font-size-sm;
+}
+
 input[type='text'],
 input[type='email'],
 input[type='number'],
 input[type='password'],
-input[type='search'] {
+input[type='search'],
+textarea {
+  background-color: #fff;
   border: 1px solid #999;
   border-radius: $border-radius-sm;
   height: 32px;
@@ -22,4 +30,21 @@ input[type='search'] {
   &[disabled] {
     background-color: $brand-gray;
   }
+}
+
+textarea {
+  font-family: $font-stack;
+  font-size: $font-size-base;
+  width: 100%;
+  min-height: 100px;
+  padding: $spacing-xs;
+}
+
+select {
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: $border-radius-sm;
+  height: $spacing-lg;
+  margin: 0;
+  padding: 0 $spacing-xs;
 }
